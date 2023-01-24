@@ -12,15 +12,9 @@ pool:
 
 
 steps:
-# - script:docker build -t sample .
-#   displayName: 'build container'
+- script:docker build -t sample .
+  displayName: 'build container'
 
-- task: Docker@2
-  inputs:
-    containerRegistry: 'acr'
-    repository: 'jan21'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
 
 # - script: 
 #     echo Add other tasks to build, test, and deploy your project.
