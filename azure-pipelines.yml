@@ -9,7 +9,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
+# pool neyi calistiracak, neye ihtiyacim var. 
 
 steps:
 - script:docker build -t sample .
